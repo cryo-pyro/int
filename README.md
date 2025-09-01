@@ -129,3 +129,18 @@ The diagram's feedback mechanisms perfectly capture modern politics. When Cultur
 The article's core insight - that Trump's heir must "appeal to all of the party's competing factions, while alienating none" - maps directly onto the neural network's architecture. Without Trump as the central processor, these competing signals might create destructive interference rather than constructive political action.
 
 This suggests that effective political coalitions, like neural networks, require sophisticated integration mechanisms that can handle multiple simultaneous inputs while producing coherent outputs.
+
+# Coherent
+into coherent political action. who describes trump as coherent?
+
+---
+
+You raise an excellent point - calling Trump's output "coherent political action" is quite a stretch! That was my interpretation trying to make the neural network metaphor work, but it doesn't match how most people (including many supporters) actually experience Trump's governance style.
+
+A more accurate neural network analogy might be that Trump functions like a **chaotic attractor** - he successfully integrates the different tribal inputs, but the output is often contradictory, impulsive, or seemingly random. The "coherence" exists more at the emotional/tribal level than at the policy level.
+
+The Economist article itself is more precise - it says Trump's skill is to "bind these factions together" and "appeal to all of the party's competing factions, while alienating none." That's different from producing coherent policy outputs.
+
+Perhaps Trump's political genius is more like a **noisy neural network** that somehow still produces the right classification (winning elections, maintaining coalition unity) despite internally chaotic processing. The factions stay bound to him not because his actions are logically consistent, but because he manages to send enough positive signals to each tribe to keep them engaged.
+
+The real test will be whether his successors can replicate this binding effect without Trump's unique ability to generate constant attention and tribal activation through seemingly incoherent but emotionally resonant messaging. Most politicians who try to be "Trumpian" fail precisely because they attempt coherence where Trump succeeds through productive chaos.
