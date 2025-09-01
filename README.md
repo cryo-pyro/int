@@ -46,7 +46,7 @@ In summary, while a DAG is simpler and more computationally efficient for acycli
 # Economist
 - [Article](https://claude.ai/public/artifacts/6166ca0b-2a2f-491a-8a87-58027ab26374)
 ## Ukubona
-# The factions jostling for Donald Trump's favour
+### The factions jostling for Donald Trump's favour
 
 **We have identified five Republican tribes. This is what they mean for the party**
 
