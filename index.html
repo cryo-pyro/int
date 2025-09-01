@@ -1,0 +1,169 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- ====== Theme ====== -->
+  <defs>
+    <linearGradient id="axonGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8ab4ff"/>
+      <stop offset="100%" stop-color="#7ff0d9"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b5c7ff"/>
+    </marker>
+    <style>
+      .bg{fill:#0a0f1c}
+      .wire{fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .label{fill:#e6edf3;font:700 12px/1.2 Inter,system-ui,Arial}
+      .small{fill:#b7c8cf;font:600 11px/1.2 Inter,system-ui,Arial}
+      .micro{fill:#9fb2b9;font:600 10px/1.2 Inter,system-ui,Arial}
+      .pill{fill:#111726;stroke:#2b3347;stroke-width:1.5}
+      .pill text{fill:#c7d4ff;font:700 11px/1.2 Inter,system-ui,Arial}
+      .gate{fill:#111726;stroke:#3a556a;stroke-width:2}
+      .gate text{fill:#9fe8c6;font:700 10px/1.2 Inter,system-ui,Arial}
+      .somaRing{fill:#0d1324;stroke:#6bd3c3;stroke-width:4}
+      .somaCore{fill:#10182e;stroke:#7ff0d9;stroke-width:2}
+      .dot{fill:#7ff0d9}
+      .node{fill:#141b2d;stroke:#546a9a;stroke-width:2}
+      .node text{fill:#d7e0ff;font:700 11px/1.2 Inter,system-ui,Arial}
+      .legend{fill:#ffffff;font:800 16px/1.2 Inter,system-ui,Arial}
+      .sub{fill:#cfd8ff;font:600 12px/1.2 Inter,system-ui,Arial}
+      .ghost{fill:#0a0f1c;stroke:#2a364d;stroke-dasharray:4 6}
+    </style>
+  </defs>
+
+  <!-- ====== Background ====== -->
+  <rect class="bg" width="1200" height="800"/>
+
+  <!-- ====== Afferent dendrites (12, 9, 6 o'clock) ====== -->
+  <!-- 12 o'clock: Biology / Ritual / Organs-as-fractals -->
+  <path class="wire" stroke="#ff7f9a" stroke-width="6"
+        d="M600,100
+           C590,180 590,220 600,260" marker-end="url(#arrow)"/>
+  <!-- dendritic twigs -->
+  <path class="wire" stroke="#ff7f9a" stroke-width="3"
+        d="M585,160 C560,150 540,140 520,130"/>
+  <path class="wire" stroke="#ff7f9a" stroke-width="3"
+        d="M615,160 C640,150 660,140 680,130"/>
+
+  <!-- 9 o'clock: Sociology / Strategy / Social networks -->
+  <path class="wire" stroke="#4ecdc4" stroke-width="6"
+        d="M100,400
+           C220,390 320,380 420,385
+           C480,388 520,395 560,410" marker-end="url(#arrow)"/>
+  <path class="wire" stroke="#4ecdc4" stroke-width="3"
+        d="M250,360 C260,370 280,380 300,386"/>
+  <path class="wire" stroke="#4ecdc4" stroke-width="3"
+        d="M240,420 C270,415 300,410 330,408"/>
+
+  <!-- 6 o'clock: Physics / Entropy / Tree hydraulics -->
+  <path class="wire" stroke="#98e07d" stroke-width="6"
+        d="M600,700
+           C590,640 590,600 600,560" marker-end="url(#arrow)"/>
+  <path class="wire" stroke="#98e07d" stroke-width="3"
+        d="M560,670 C575,660 585,650 592,635"/>
+  <path class="wire" stroke="#98e07d" stroke-width="3"
+        d="M640,670 C625,660 615,650 608,635"/>
+
+  <!-- ====== Gated channels on afferents ====== -->
+  <!-- top gate -->
+  <g transform="translate(572,195)">
+    <rect class="gate" rx="6" ry="6" width="56" height="22"/>
+    <text x="28" y="15" text-anchor="middle">GATE</text>
+  </g>
+  <!-- left gate -->
+  <g transform="translate(330,378)">
+    <rect class="gate" rx="6" ry="6" width="56" height="22"/>
+    <text x="28" y="15" text-anchor="middle">GATE</text>
+  </g>
+  <!-- bottom gate -->
+  <g transform="translate(572,620)">
+    <rect class="gate" rx="6" ry="6" width="56" height="22"/>
+    <text x="28" y="15" text-anchor="middle">GATE</text>
+  </g>
+
+  <!-- ====== Soma (splicing 3 inputs) ====== -->
+  <circle class="somaRing" cx="600" cy="400" r="78"/>
+  <circle class="somaCore" cx="600" cy="400" r="56"/>
+  <text class="label" x="600" y="398" text-anchor="middle">SOMA</text>
+  <text class="small" x="600" y="418" text-anchor="middle">splice(12, 9, 6)</text>
+
+  <!-- ====== Axon at 3 o'clock ====== -->
+  <path class="wire" stroke="url(#axonGrad)" stroke-width="8"
+        d="M678,400
+           C760,398 840,398 920,400" />
+  <!-- myelin beads (subtle) -->
+  <circle class="dot" cx="740" cy="398" r="2.5"/>
+  <circle class="dot" cx="780" cy="398" r="2.5"/>
+  <circle class="dot" cx="820" cy="398" r="2.5"/>
+
+  <!-- ====== N-terminal arborization to effectors ====== -->
+  <path class="wire" stroke="#c7d4ff" stroke-width="5"
+        d="M920,400 C980,370 1020,350 1080,330" marker-end="url(#arrow)"/>
+  <path class="wire" stroke="#c7d4ff" stroke-width="5"
+        d="M920,400 C980,400 1020,400 1080,400" marker-end="url(#arrow)"/>
+  <path class="wire" stroke="#c7d4ff" stroke-width="5"
+        d="M920,400 C980,430 1020,450 1080,470" marker-end="url(#arrow)"/>
+
+  <!-- effector nodes (cells → tissues → organs → systems → grids) -->
+  <g transform="translate(1080,330)">
+    <rect class="node" x="-70" y="-18" width="140" height="36" rx="8"/>
+    <text x="0" y="4" text-anchor="middle">CELL → TISSUE</text>
+    <text class="micro" x="0" y="20" text-anchor="middle">functional unit (villus, alveolus, nephron)</text>
+  </g>
+  <g transform="translate(1080,400)">
+    <rect class="node" x="-70" y="-18" width="140" height="36" rx="8"/>
+    <text x="0" y="4" text-anchor="middle">ORGAN → SYSTEM</text>
+    <text class="micro" x="0" y="20" text-anchor="middle">fractal scaling / exchange / flow</text>
+  </g>
+  <g transform="translate(1080,470)">
+    <rect class="node" x="-70" y="-18" width="140" height="36" rx="8"/>
+    <text x="0" y="4" text-anchor="middle">GRID / MESH</text>
+    <text class="micro" x="0" y="20" text-anchor="middle">circuits • networks • recursion</text>
+  </g>
+
+  <!-- ====== Layer badges around the afferents ====== -->
+  <!-- 12 o'clock (Biology/Animal) -->
+  <g text-anchor="middle">
+    <rect class="pill" x="524" y="98" rx="10" ry="10" width="152" height="46"/>
+    <text x="600" y="116">BIOLOGY / ANIMAL</text>
+    <text class="micro" x="600" y="132">Ritual • Organs-as-fractals</text>
+  </g>
+  <!-- 9 o'clock (Sociology/Man) -->
+  <g>
+    <rect class="pill" x="120" y="312" rx="10" ry="10" width="210" height="46"/>
+    <text x="225" y="330">SOCIOLOGY / MAN</text>
+    <text class="micro" x="225" y="346">Strategy • Social networks</text>
+  </g>
+  <!-- 6 o'clock (Physics/Plant) -->
+  <g text-anchor="middle">
+    <rect class="pill" x="524" y="686" rx="10" ry="10" width="152" height="46"/>
+    <text x="600" y="704">PHYSICS / PLANT</text>
+    <text class="micro" x="600" y="720">Entropy • Tree hydraulics</text>
+  </g>
+
+  <!-- ====== Value “fruits” (canopy tokens) ====== -->
+  <g>
+    <circle cx="600" cy="260" r="18" fill="#a1f0b2"/><text class="micro" x="600" y="265" text-anchor="middle" fill="#0a3318">FAITH</text>
+    <circle cx="520" cy="320" r="18" fill="#ffb6c1"/><text class="micro" x="520" y="325" text-anchor="middle" fill="#5a0b18">HOPE</text>
+    <circle cx="680" cy="320" r="18" fill="#87ceeb"/><text class="micro" x="680" y="325" text-anchor="middle" fill="#01213b">LOVE</text>
+    <circle cx="750" cy="365" r="18" fill="#d8b4fe"/><text class="micro" x="750" y="370" text-anchor="middle" fill="#2a0a3a">EFF</text>
+    <circle cx="750" cy="435" r="18" fill="#ffe081"/><text class="micro" x="750" y="440" text-anchor="middle" fill="#624a00">SUS</text>
+  </g>
+
+  <!-- ====== Metaphysics & Computation badges near axon ====== -->
+  <g text-anchor="middle">
+    <rect class="pill" x="680" y="320" rx="10" ry="10" width="180" height="42"/>
+    <text x="770" y="338">METAPHYSICS / ENTERPRISE</text>
+    <text class="micro" x="770" y="354">Operations • Archetype/Franchise</text>
+  </g>
+  <g text-anchor="middle">
+    <rect class="pill" x="900" y="506" rx="10" ry="10" width="168" height="42"/>
+    <text x="984" y="524">COMPUTATION / SYSTEM</text>
+    <text class="micro" x="984" y="540">Existential • Grid resilience</text>
+  </g>
+
+  <!-- ====== Title ====== -->
+  <text class="legend" x="600" y="60" text-anchor="middle">NEURON OF INTELLIGENCE</text>
+  <text class="sub" x="600" y="84" text-anchor="middle">3 afferents (12/9/6) → soma splice → axon (3) → N-terminal effectors</text>
+
+  <!-- ====== Subtle ring (to hint circular/mandala closure) ====== -->
+  <circle class="ghost" cx="600" cy="400" r="310" fill="none" stroke-width="2" opacity="0.35"/>
+</svg>
